@@ -283,3 +283,46 @@ _The authentication token is included in the email sent from the recoverPassword
   ]
 }
 ```
+
+## Assign Words of Affirmation
+### /rewards
+
+#### Request
+```json
+{
+  "action" : "assignWordsOfAffirmation",
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "affirmationAssignments" : [
+    {"affirmationId": "*****", "childId": "******"},
+    {"affirmationId": "*****", "childId": "******"},
+    {"affirmationId": "*****", "childId": "******"},
+    {"affirmationId": "*****", "childId": "******"},
+  ]
+}
+```
+
+#### Response
+```json
+{
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "affirmationAssignments" : [
+    {"affirmationId": "*****", "childId": "******"},
+    {"affirmationId": "*****", "childId": "******"},
+    {"affirmationId": "*****", "childId": "******"},
+    {"affirmationId": "*****", "childId": "******"},
+  ]
+}
+```
+
+## Record Personal Message
+### /rewards
+
+#### Request
+```json
+????
+```
+
+#### Response
+```json
+???
+```
