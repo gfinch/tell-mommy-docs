@@ -76,3 +76,51 @@ _The `familyId` of the family of the user.  If this is a new family, the id is g
   "familyId" : "abcd-1234-effe-5678-dcba"
 }
 ```
+
+
+## Add Child
+### /family
+
+#### Request
+
+```json
+{
+  "action" : "addChild",
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "name" : "Peter"
+}
+```
+
+#### Response
+```json
+{
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "childId" : "dcba-1234-effe-5678-abcd"
+}
+```
+
+## List Children
+### /family
+
+#### Request
+
+```json
+{
+  "action" : "listChildren",
+  "familyId" : "abcd-1234-effe-5678-dcba"
+}
+```
+
+#### Response
+```json
+{
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "children" : [
+    {"name" : "Peter", "childId": "dcba...", "nickNames" : ["Pete", "Peter the Magnificent"], "pronunciation" : "ˈpi.tɚ"},
+    {"name" : "Susan", "childId": "abcd...", "nickNames" : ["Sue", "Susan the Gentle"]},
+    {"name" : "Edmund", "childId": "1234...", "nickNames" : ["Ed", "Edumund the Just"]},
+    {"name" : "Lucy", "childId": "9876...", "nickNames" : ["Lucy the Valient"]}
+  ]
+}
+```
+
