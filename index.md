@@ -1,7 +1,7 @@
 ## Registration
 ### /login
 
-Request
+### Request
 _Either `familyName` or `familyId` is required.  If `familyId` is provided `familyName`, if provided, is ignored._
 ```json
 {
@@ -13,7 +13,7 @@ _Either `familyName` or `familyId` is required.  If `familyId` is provided `fami
 }
 ```
 
-Response
+### Response
 _The `familyId` of the family.  If this is a new family, the id is generated and returned._
 ```json
 {
