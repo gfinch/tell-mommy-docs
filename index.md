@@ -1,17 +1,18 @@
 ## Registration
+### /login
 
-### Register - Input
-#### /login
-
+#### Input
 ```json
 {
   "hello" : "world"
 }
 ```
-
-### Register - Output
-
-
+#### Outpu
+```json
+{
+  "hello" : "world"
+}
+```
 
 ### Markdown
 
