@@ -260,7 +260,7 @@ _The authentication token is included in the email sent from the recoverPassword
 #### Request
 ```json
 {
-  "action" : "editOfAffirmation",
+  "action" : "editWordsOfAffirmation",
   "familyId" : "abcd-1234-effe-5678-dcba",
   "wordsOfAffirmation" : [
     {"affirmationId": "*****", "affirmationText": "way to go!"},
