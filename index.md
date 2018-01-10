@@ -254,7 +254,7 @@ _The authentication token is included in the email sent from the recoverPassword
 ```
 
 
-## List Words of Affirmation
+## Edit Words of Affirmation
 ### /rewards
 
 #### Request
