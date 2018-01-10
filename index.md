@@ -2,15 +2,22 @@
 ### /login
 
 Request
+_Either `familyName` or `familyId` is required.  If `familyId` is provided `familyName`, if provided, is ignored._
 ```json
 {
-  "hello" : "world"
+  "action" : "register",
+  "email" : "mamabird@mamabird.biz",
+  "password" : "********",
+  "familyName" : "The MamaBird Family",
+  "familyId" : "abcd-1234-effe-5678-dcba"
 }
 ```
+
 Response
+_The `familyId` of the family.  If this is a new family, the id is generated and returned._
 ```json
 {
-  "hello" : "world"
+  "familyId" : "abcd-1234-effe-5678-dcba"
 }
 ```
 
