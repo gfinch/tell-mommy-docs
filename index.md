@@ -61,6 +61,7 @@ _The `familyId` of the family of the user.  If this is a new family, the id is g
 ### /login
 
 #### Request
+_The authentication token is included in the email sent from the recoverPassword action._
 ```json
 {
   "action" : "changePassword",
@@ -76,7 +77,6 @@ _The `familyId` of the family of the user.  If this is a new family, the id is g
   "familyId" : "abcd-1234-effe-5678-dcba"
 }
 ```
-
 
 ## Add Child
 ### /family
@@ -155,7 +155,6 @@ _The `familyId` of the family of the user.  If this is a new family, the id is g
 ### /family
 
 #### Request
-
 ```json
 {
   "action" : "removeChild",
@@ -167,4 +166,120 @@ _The `familyId` of the family of the user.  If this is a new family, the id is g
 #### Response
 ```json
 {}
+```
+
+## List Reward Systems
+### /rewards
+
+#### Request
+```json
+{
+  "action" : "listRewardSystems",
+  "familyId" : "abcd-1234-effe-5678-dcba"
+}
+```
+
+#### Response
+```json
+{
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "rewardSystems" : [
+    {"rewardSystemId": "*****", "rewardSystemName": "dollars"},
+    {"rewardSystemId": "*****", "rewardSystemName": "points"},
+    {"rewardSystemId": "*****", "rewardSystemName": "stars"}
+  ]
+}
+```
+
+## Choose Reward System
+### /rewards
+
+#### Request
+```json
+{
+  "action" : "selectRewardSystem",
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "rewardSystemId" : "*****"
+}
+```
+
+#### Response
+```json
+{
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "rewardSystem" : {"rewardSystemId": "*****", "rewardSystemName": "dollars"}
+}
+```
+
+## Get Reward System
+### /rewards
+
+#### Request
+```json
+{
+  "action" : "getRewardSystem",
+  "familyId" : "abcd-1234-effe-5678-dcba"
+}
+```
+
+#### Response
+```json
+{
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "rewardSystem" : {"rewardSystemId": "*****", "rewardSystemName": "dollars"}
+}
+```
+
+## List Words of Affirmation
+### /rewards
+
+#### Request
+```json
+{
+  "action" : "listWordsOfAffirmation",
+  "familyId" : "abcd-1234-effe-5678-dcba"
+}
+```
+
+#### Response
+```json
+{
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "wordsOfAffirmation" : [
+    {"affirmationId": "*****", "affirmationText": "way to go!"},
+    {"affirmationId": "*****", "affirmationText": "you're the best!"},
+    {"affirmationId": "*****", "affirmationText": "superb work!"}
+  ]
+}
+```
+
+
+## List Words of Affirmation
+### /rewards
+
+#### Request
+```json
+{
+  "action" : "editOfAffirmation",
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "wordsOfAffirmation" : [
+    {"affirmationId": "*****", "affirmationText": "way to go!"},
+    {"affirmationId": "*****", "affirmationText": "you're the best!"},
+    {"affirmationId": "*****", "affirmationText": "superb work!"},
+    {"affirmationId": "*****", "affirmationText": "you rock!"}
+  ]
+}
+```
+
+#### Response
+```json
+{
+  "familyId" : "abcd-1234-effe-5678-dcba",
+  "wordsOfAffirmation" : [
+    {"affirmationId": "*****", "affirmationText": "way to go!"},
+    {"affirmationId": "*****", "affirmationText": "you're the best!"},
+    {"affirmationId": "*****", "affirmationText": "superb work!"},
+    {"affirmationId": "*****", "affirmationText": "you rock!"}
+  ]
+}
 ```
