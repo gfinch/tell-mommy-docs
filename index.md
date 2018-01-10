@@ -1,13 +1,13 @@
 ## Registration
 ### /login
 
-#### Input
+Request
 ```json
 {
   "hello" : "world"
 }
 ```
-#### Outpu
+Response
 ```json
 {
   "hello" : "world"
