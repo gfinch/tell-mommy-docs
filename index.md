@@ -33,7 +33,9 @@ __
 
 #### Response
 ```json
-{}
+{
+  "familyId" : "abcd-1234-effe-5678-dcba"
+}
 ```
 
 ## Login
