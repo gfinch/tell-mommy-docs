@@ -2,13 +2,12 @@
 ### /login
 
 #### Request
-_Either `familyName` or `familyId` is required.  If `familyId` is provided `familyName`, if provided, is ignored._
+_familyId is optional.  If provided, the email will be registered to the given family.  Otherwise, a new family id is generated._
 ```json
 {
   "action" : "register",
   "email" : "mamabird@mamabird.biz",
   "password" : "********",
-  "familyName" : "The MamaBird Family",
   "familyId" : "abcd-1234-effe-5678-dcba"
 }
 ```
