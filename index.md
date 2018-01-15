@@ -20,6 +20,22 @@ _The `familyId` of the family.  If this is a new family, the id is generated and
 }
 ```
 
+## Deregistration
+#### Request
+__
+```json
+{
+  "action" : "deregister",
+  "email" : "mamabird@mamabird.biz",
+  "password" : "********"
+}
+```
+
+#### Response
+```json
+{}
+```
+
 ## Login
 ### /login
 
